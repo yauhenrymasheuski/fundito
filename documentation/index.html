@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FUNDITO - HTML Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom css file -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--font awesome-->
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
+
+</head>
+<body data-spy="scroll" data-target=".navbar-example">
+<div>
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-example">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">FUNDITO - Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                <ul class="nav navbar-nav" role="tablist">
+                    <li class="active"><a href="#overview">Overview</a></li>
+                    <li class=""><a href="#start">Getting Started</a></li>
+                    <li class=""><a href="#html">HTML Structure</a></li>
+                    <li class=""><a href="#css">CSS Structure</a></li>
+                    <li class=""><a href="#js">JavaScript</a></li>
+                    <li class=""><a href="#projects">Categories</a></li>
+                    <li class=""><a href="#icons">Icons</a></li>
+                    <li class=""><a href="#colors">Color Options</a></li>
+                    <!--<li class="dropdown">-->
+                    <!--<a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">-->
+                    <!--<li class=""><a href="#one" tabindex="-1">one</a></li>-->
+                    <!--<li class=""><a href="#two" tabindex="-1">two</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li class=""><a href="#three" tabindex="-1">three</a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="docs-block">
+                <div class="jumbotron">
+                    <h1><strong>FUNDITO Documentation</strong></h1>
+                    <p><small>One Page Crowdfunding HTML Template build by Bootstrap 3.3.1</small></p>
+                    <p><small>Current version - 1.0. First release</small></p>
+                </div>
+                <div id="overview">
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>Thank you for purchasing my theme. If you have any questions, please feel free to ask! Thanks so much!</p>
+                    <p> I assume you have basic knowledge of HTML and CSS, so let's get started!</p>
+                </div>
+                <div id="start">
+                    <h2>Getting Started</h2>
+                    <hr>
+                    <p>All files you need are in the package you've downloaded from ThemeForest, when you extract it you'll find folder named "HTML". FUNDITO is here.</p>
+                    <p>You'll find a HTML files</p>
+                    <ul>
+                        <li><strong>index.html</strong> - main html file</li>
+                        <li><strong>index2.html</strong> - main html file with portfolio filter</li>
+                        <li><strong>index3.html</strong> - main html file with 3 colums portfolio</li>
+                        <li><strong>projects.html</strong> - projects page html </li>
+                    </ul>
+                    <p>...and couple folders:</p>
+                    <ul>
+                        <li><strong>CSS</strong> contains all CSS files</li>
+                        <li><strong>FONT</strong> contains FontAwesome files and Glyphicons</li>
+                        <li><strong>IMG</strong> contains all images</li>
+                        <li><strong>JS</strong> contains JavaScript files</li>
+                    </ul>
+                </div>
+                <div id="html">
+                    <h2>HTML Structure</h2>
+                    <hr>
+                    <p>FUNDITO template is based on Bootstrap - framework for developing responsive, mobile first projects on the web. More information you can find at <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></p>
+                    <h3>Grid system</h3>
+                    <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.</p>
+                    <h3>Example of usage</h3>
+                    <p>If you want to create new container using Bootstrap grid, the basic grid is:</p>
+                    <div class="highlight">
+                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        ...
+        <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+                    <p>To create container with white backgroud and top and bottom bordered you can use:</p>
+                    <div class="highlight">
+                        <pre>
+<code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-white container-bordered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        ...
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+                    <p>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.</p>
+                    <p>If you want to create new container using grid, after "row" use <strong>div</strong> with specified grid class:</p>
+                    <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-8 col-lg-6"</span><span class="nt">&gt;</span>-- content --<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-8 col-lg-6"</span><span class="nt">&gt;</span>-- content --<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-8 col-lg-6"</span><span class="nt">&gt;</span>-- content --<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+                    <p>Useage of class prefix:</p>
+                    <ul>
+                        <li>".col-xs-" for Extra small devices, Phones (<768px)</li>
+                        <li>".col-sm-" for Small devices, Tablets (≥768px) </li>
+                        <li>".col-md-" for Medium devices, Desktops (≥992px) </li>
+                        <li>".col-lg-" for Large devices Desktops (≥1200px)) </li>
+                    </ul>
+                </div>
+                <div id="css">
+                    <h2>CSS Structure</h2>
+                    <hr>
+                    <p>There are 4 CSS files used in FUNDITO:</p>
+                    <ul>
+                        <li><strong>css/bootstrap.css</strong> - contains grid system, main css settings, responsive grid and media queries</li>
+                        <li><strong>css/font-awesome.css</strong> - css file for usage vector icons</li>
+                        <li><strong>css/lightbox.css</strong> -  css for a script used to overlay images on the page</li>
+                        <li><strong>css/style.css</strong> - main css file</li>
+                        <li><strong>css/style.custom.css</strong> - your custom css file, change it!</li>
+                        <li><strong>css/colors</strong> - folder with couple color schemes</li>
+                    </ul>
+
+                    <p>The main style.css has a table of contents:</p>
+    <pre class="prettyprint html">
+<span class="pln"> </span><span class="typ">1. All components</span><span class="pln">
+ </span><span class="typ">2. Navigation bar and fix navigation bar</span>
+ <span class="pln"></span><img src="" alt=""/><span class="typ">3. Search bar</span><span class="pln">
+ </span><span class="typ">4. Discover box</span><span class="pln"></span>
+ <span class="typ">5. Container about</span><span class="pln"></span>
+ <span class="typ">6. Container about</span><span class="pln"></span>
+ <span class="typ">7. Projects block</span><span class="pln"></span>
+ <span class="typ">8. Categories block</span><span class="pln"></span>
+ <span class="typ">9. Info container</span><span class="pln"></span>
+ <span class="typ">10. Contacts block</span><span class="pln"></span>
+ <span class="typ">11. Partners block</span><span class="pln"></span>
+ <span class="typ">12. Portfolio filter</span><span class="pln"></span>
+ <span class="typ">13. Project page</span><span class="pln"></span>
+ <span class="typ">14. Footer</span><span class="pln"></span>
+ <span class="typ">14. Custom media quaries</span><span class="pln"></span>
+</pre>
+                    <p>The CSS files are separated into sections using commented header:</p>
+                <pre class="prettyprint css"><span class="com">/*all components */</span><span class="pln">
+</span></pre>
+                    <p>so you can just search by element:)</p>
+                 </div>
+                <div id="js">
+                    <h2>Java Script</h2>
+                    <hr>
+                    <p>List of used plugins and libraries:</p>
+                    <ul>
+                        <li>JavaScript API <strong>Google Map</strong> (v 3)</li>
+                        <li><strong>Bootstrap</strong> JS file</li>
+                        <li><strong>Lightbox</strong> plugin</li>
+                    </ul>
+                    <p>And some custom js code, which you can find at all pages</p>
+                    <p>If you want to create some standart bootstrat js elements - visite plase <a href="getbootstrap.com/javascript/">getbootstrap.com/javascript/</a></p>
+                </div>
+                <div id="projects">
+                    <h2>Projects filter by categorie</h2>
+                    <hr>
+                    <p>In <strong>index2.html</strong> you can find Projects filter by categorie</p>
+                    <p>If you want to create new categorie - you must just add <strong>id</strong> of categorie in input and add corresponding <strong>value</strong></p>
+                    <pre class="prettyprint html"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"portfolio-filter"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"All"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn current btn-info"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="atn"> value</span><span class="pun">=</span><span class="atv">"All"</span><span class="tag">&gt;</span><span class="pln"></span><span class="pln">
+    </span><span class="tag">&lt;input </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"Creative"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-info"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="atn"> value</span><span class="pun">=</span><span class="atv">"Creative"</span><span class="tag">&gt;</span><span class="pln"></span><span class="pln">
+    </span><span class="tag">&lt;input </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"Developments"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-info"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="atn"> value</span><span class="pun">=</span><span class="atv">"Developments"</span><span class="tag">&gt;</span><span class="pln"></span>
+    ...
+<span class="tag">&lt;/div&gt;</span></pre>
+                    <p>To connect filter button with project add to the div's <strong>portfolio-listing</strong> class name of your filter (for example: All Creative). You can add there categories how many you want.</p>
+<pre>
+&lt;div class="container projects-box projects">
+    &lt;div class="col-lg-3 col-sm-6 col-xs-12 portfolio-listing All Creative block" style="display: block;">
+        &lt;div class="project-box">
+        ....
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</pre>
+
+                    </div>
+                <div id="icons">
+                    <h2>Font Awesome & Icons</h2>
+                    <hr>
+                    <p>Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. </p>
+                    <p>If you need more informations, please visit this site: <a href="http://fortawesome.github.com/Font-Awesome/">http://fortawesome.github.com/Font-Awesome/</a></p>
+                    <p>Basic Icons</p>
+                    <pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-camera-retro"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-camera-retro
+                    </code></pre>
+                    <i class="fa fa-camera-retro fa-5x"></i> fa-camera-retro
+                    <i class="fa  fa-bank fa-5x"></i> fa-camera-retro
+                    <i class="fa  fa-female fa-5x"></i> fa-camera-retro
+                    <p>etc.</p>
+                </div>
+                <div id="colors">
+                    <h2>Color Options</h2>
+                    <hr>
+                    <p>Current color scheme of FUNDITO is red, but you can easy change it - in folder <strong>css/colors</strong> you will find a few files with blue, green and purple color schemes</p>
+                    <p>Folder contains css file <strong>custom.css</strong> where you can change colors and create your own page!</p>
+                    <p>To use the color scheme on website, edit html file at line 16 - just delete comments &lt;!-- --> and rename css file.</p>
+                        <p>For example if you need an blue color, replace css/colors/green.css with css/colors/blue.css</p>
+                    <p>Enjoy!</p>
+                </div>
+                <div>
+                    <h3>Credits</h3>
+                    <hr>
+                    <p>Resources Used:</p>
+
+                    <ul>
+                        <li>Bootstrap 3 - as base</li>
+                        <li>Projects Photo by Cuba Gallery <a href="https://www.flickr.com/photos/cubagallery/">https://www.flickr.com/photos/cubagallery/</a></li>
+                        <li>other photos - <a href="http://www.freeimages.com/">http://www.freeimages.com/</a></li>
+                        <li>Google Maps API V3 (CC BY-SA 3.0)</li>
+                        <li>Lightroom plugin</li>
+                    </ul>
+                </div>
+                <p>Once again, thank you so much for purchasing my theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                <hr>
+                <p>Best Regards, LUSTERKA</p>
+                <p>© LUSTERKA 2015</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer>
+
+</footer>
+<!--footer-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

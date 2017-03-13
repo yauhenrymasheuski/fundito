@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FUNDITO - crowdfunding bootstrap theme</title>
+
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Main css file -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Your custom css file -->
+    <link href="css/style.custom.css" rel="stylesheet">
+    <!-- Color schemes - just uncomment it! -->
+    <!--<link href="css/colors/green.css" rel="stylesheet">-->
+    <!-- Lightbox css file -->
+    <link href="css/lightbox.css" rel="stylesheet">
+    <!-- Font Awesome Css -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Google fonts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--google map -->
+
+</head>
+<body>
+<!--top line start-->
+<div class="border-box-bottom white-box">
+    <div class="container top-box">
+        <div class="row">
+            <div class="float-left">
+                <span class="box-bordered-left top-icon-box"><a data-toggle="modal" data-target="#login-popup"><span class="colored">></span> Login</a></span>
+                <span class="box-bordered-left box-bordered-right top-icon-box"><a data-toggle="modal" data-target="#register-popup" href=""><span class="colored">></span> Sign up</a></span>
+                <!-- Login and register modal -->
+                <div class="modal fade" id="login-popup" tabindex="-1" role="dialog" aria-labelledby="login-popup" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="semi-bold upprecase">LOGIN</h4>
+                                <p><small>Already Have An Account?</small></p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="login_email">Personal Info:</label>
+                                    <input type="email" class="form-control" id="login_email" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="login_pass" placeholder="Enter your password">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="forgot_pass underline colored">I forgot my Password </a>
+                                <button type="button" class="btn btn-info">LOGIN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--register-->
+                <div class="modal fade" id="register-popup" tabindex="-1" role="dialog" aria-labelledby="register-popup" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="semi-bold upprecase">Sign up</h4>
+                                <p><small>A Fundito is required to continue</small></p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="login_email">Personal Info:</label>
+                                    <input type="email" class="form-control" id="register_email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="register_email2" placeholder="Re-enter Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="register_pass" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="register_pass2" placeholder="Re-enter Password">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">  Sign me up for the weekly newsletter
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <small><span>Have an account? </span><a href="#" class="forgot_pass colored underline"> Log in</a></small>
+                                <button type="button" class="btn btn-info">Create an Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="float-right">
+                <span class="icons-top top-icon-box box-bordered-left"><a href="#"><i class="fa fa-facebook-square"></i></a></span>
+                <span class="icons-top top-icon-box box-bordered-left"><a href="#"><i class="fa fa-twitter-square"></i></a></span>
+                <span class="icons-top top-icon-box box-bordered-left"><a href="#"><i class="fa fa-pinterest-square"></i></a></span>
+                <span class="icons-top top-icon-box box-bordered-left"><a href="#"><i class="fa fa-google-plus-square"></i></a></span>
+                <span class="box-bordered-left top-icon-box"><a class="colored" href="#">EN</a></span>
+                <span class="box-bordered-left box-bordered-right top-icon-box"><a href="#">DE</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--top line end-->
+
+<!--navigation start-->
+<nav class="navbar navbar-default navbar-static-top border-box-bottom">
+    <div class="border-box-bottom">
+        <div class="container navbar-box">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-txt semi-bold" href="index.html">FUNDITO</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li class="active"><a class="box-bordered-left" href="#">HOME</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle box-bordered-left" data-toggle="dropdown" role="button" aria-expanded="false">HOME 1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="index2.html">HOME 2</a></li>
+                            <li><a href="#">HOME 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="box-bordered-left" href="index.html#about">ABOUT</a></li>
+                    <li><a class="box-bordered-left" href="index2.html#projects">PROJECTS</a></li>
+                    <li><a class="box-bordered-left" href="index.html#categories">CATEGORIES</a></li>
+                    <li><a class="box-bordered-left" href="index.html#contacts">CONTACTS</a></li>
+                    <li><a class="box-bordered-left" href="index.html#partners">PARTNERS</a></li>
+                    <li><a class="box-bordered-left box-bordered-right" href="index.html#">ALL PAGES</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+
+        </div>
+    </div>
+</nav>
+<!--navigation end-->
+
+<!--search bar start-->
+<div class="search-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-sm-1 col-xs-2 search-txt"><label for="search">DISCOVER!</label></div>
+            <div class="col-lg-11 col-sm-11 col-xs-10">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search" placeholder="Search for...">
+      <span class="input-group-btn">
+        <a href="#" class="btn btn-default" type="button"><i class="fa fa-search"></i> SEACRH</a>
+      </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--search bar end-->
+
+<!--project block start -->
+<div class="container-bordered project-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 clearfix">
+                <div class="col-sm-12 col-xs-12">
+                    <h2 class="text-center semi-bold main-title">Title Of Your Project</h2>
+                    <p class="text-center">
+                        <span class="project-location"><i class="fa fa-map-marker colored"></i> <a href="#" class="underline">Orange County, CA</a></span>
+                        <span><i class="fa fa-flask colored"> </i> <a class="underline" href="#">science</a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <ul class="nav nav-tabs" role="tablist" id="myTab">
+                    <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+                    <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments <span class="label label-primary">3</span></a></li>
+                    <li role="presentation"><a href="#funders" aria-controls="funders" role="tab" data-toggle="tab">Funders <span class="label label-success">10</span></a></li>
+                    <li role="presentation"><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery <span class="label label-info">3</span></a></li>
+                    <li role="presentation"><a href="#updates" aria-controls="updates" role="tab" data-toggle="tab">Updates <span class="label label-danger">3</span></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="about">
+                        <h2 class="semi-bold">Title Of Your Project</h2>
+                        <!--after src= insert your vimeo link! -->
+                        <div class='embed-container'><iframe src='http://player.vimeo.com/video/your_vimeo_number' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+                        <p class="semi-bold paragr_top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec massa ut justo accumsan malesuada ut pharetra sapien. Nullam ac nisi vel augue ultrices venenatis sed sed felis.</p>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec massa ut justo accumsan malesuada ut pharetra sapien. Nullam ac nisi vel augue ultrices venenatis sed sed felis. Quisque velit tortor, suscipit et auctor tempus, pretium eu velit. Vestibulum vitae ligula sapien. Donec et felis lorem. Vestibulum non feugiat risus. Sed malesuada nisl vel lorem rhoncus feugiat. Proin pellentesque velit nec metus tincidunt quis egestas tortor venenatis. Phasellus mattis sapien suscipit massa suscipit placerat. Vestibulum semper laoreet tempus. Curabitur ac sagittis urna. Sed rhoncus massa vel lorem lobortis sit amet adipiscing nunc aliquet. Quisque metus velit, mattis a vehicula sed, hendrerit sed leo. Donec aliquet molestie semper. Donec ac condimentum nisl. Ut bibendum scelerisque turpis vitae porttitor. Maecenas eget nisi nulla. Pellentesque sed congue nulla. Etiam magna massa, tempus quis accumsan sit amet, posuere eget odio. Suspendisse pellentesque odio id nunc tempor placerat. Pellentesque ipsum mauris, ultrices ut rhoncus id, vehicula eget est. Sed turpis tortor, accumsan eu ultrices et, egestas eget diam. Praesent ligula felis, varius vitae mollis at, cursus at massa. Sed consequat semper sagittis. Vivamus ultricies massa a urna interdum ultrices.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec massa ut justo accumsan malesuada ut pharetra sapien. Nullam ac nisi vel augue ultrices venenatis sed sed felis. Quisque velit tortor, suscipit et auctor tempus, pretium eu velit. Vestibulum vitae ligula sapien. Donec et felis lorem. Vestibulum non feugiat risus. Sed malesuada nisl vel lorem rhoncus feugiat. Proin pellentesque velit nec metus tincidunt quis egestas tortor venenatis. Phasellus mattis sapien suscipit massa suscipit placerat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec massa ut justo accumsan malesuada ut pharetra sapien. Nullam ac nisi vel augue ultrices venenatis sed sed felis. Quisque velit tortor, suscipit et auctor tempus, pretium eu velit. Vestibulum vitae ligula sapien.</p>
+                        <p class="paragr_top">Share This Project
+                            <span class="share_project">
+                                <span class="icons-top top-icon-box"><a href="#"><i class="fa fa-facebook-square"></i></a></span>
+                                <span class="icons-top top-icon-box"><a href="#"><i class="fa fa-twitter-square"></i></a></span>
+                                <span class="icons-top top-icon-box"><a href="#"><i class="fa fa-pinterest-square"></i></a></span>
+                                <span class="icons-top top-icon-box"><a href="#"><i class="fa fa-google-plus-square"></i></a></span>
+                            </span>
+                        </p>
+                        <div class="media paragr_top">
+                            <a class="media-left" href="#">
+                                <img data-src="holder.js/140x140" class="img-thumbnail" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9IjcwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTQweDE0MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="width: 140px; height: 140px;">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Johnny Doe</h4>
+                                <p><small><em>photographer</em></small></p>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                <p class="share_project user-socials">
+                                    <span class="icons-top top-icon-box"><a href="#"><i class="fa fa-facebook-square"></i></a></span>
+                                    <span class="icons-top top-icon-box"><a href="#"><i class="fa fa-twitter-square"></i></a></span>
+                                    <span class="icons-top top-icon-box"><a href="#"><i class="fa fa-pinterest-square"></i></a></span>
+                                    <span class="icons-top top-icon-box"><a href="#"><i class="fa fa-google-plus-square"></i></a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="comments">
+                        <h2>Post a Comment</h2>
+                        <textarea rows="6" data-fieldlength="500" id="message" name="comment" class="form-control paragraph" placeholder="" required></textarea>
+                        <p class="text-right padding-box-bottom"><button type="button" class="btn btn-info upprecase">BACK THIS PROJECT</button></p>
+                        <ul class="media-list">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">User <small>- 6 hours ago - </small> <a href="#" class="colored">Reply</a></h4>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                            <div class="media media-margin">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">User <small>- 9 hours ago - </small> <a href="#" class="colored">Reply</a></h4>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">User <small>- 12 hours ago - </small> <a href="#" class="colored">Reply</a></h4>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="funders">
+                        <h2 >Funders</h2>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$10 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$13 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$103 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$21 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$50 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$5 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$30 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$16 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$200 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12 funder">
+                                <div class="col-sm-2 col-lg-3 col-xs-4 ">
+                                    <a href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-lg-5 col-xs-4 text-left">
+                                    <div class="vertical-funder">
+                                        <h4 class="media-heading">User</h4>
+                                        <p>6 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-xs-4 text-right">
+                                    <div>
+                                        <h3 class="media-heading funder-price">$100 USD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="gallery">
+                        <h2>Image Gallery</h2>
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <!--carousel indicators-->
+                            <!--<ol class="carousel-indicators">-->
+                                <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+                                <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+                                <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+                            <!--</ol>-->
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item">
+                                    <a href="img/projects/project.jpg" data-lightbox="project-1" data-title="Projects title goes here"><img alt="project image" class="project-image" src="img/projects/project.jpg"></a>
+                                </div>
+                                <div class="item active">
+                                    <a href="img/projects/project.jpg" data-lightbox="project-1" data-title="Projects title goes here"><img alt="project image" class="project-image" src="img/projects/project.jpg"></a>
+                                </div>
+                                <div class="item">
+                                    <a href="img/projects/project.jpg" data-lightbox="project-1" data-title="Projects title goes here"><img alt="project image" class="project-image" src="img/projects/project.jpg"></a>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <p class="margin-title">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras siCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras siCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras si</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="updates">
+                        <h2>Update 3</h2>
+                        <p class="border-box-bottom padding-box-bottom">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        <h2>Update 2</h2>
+                        <p class="border-box-bottom padding-box-bottom">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        <h2>Update 1</h2>
+                        <p><div class='embed-container'><iframe src='http://player.vimeo.com/video/your_vimeo_number' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></p>
+                        <p class="border-box-bottom padding-box-bottom">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 right-box-project">
+                <div class="row white-box">
+                    <div class="col-sm-12">
+                        <h3>$160,000 <small>USD</small></h3>
+                        <p>pledged of <span class="semi-bold">$200,000</span> goal</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                            </div>
+                        </div>
+                        <p class="clearfix">
+                            <span class="float-left"><small>80%</small></span>
+                            <span class="float-right"><small>30 days to go</small></span>
+                        </p>
+                        <p class="clearfix">
+                            <small>This project will be funded on Sun, Feb 15 2015 9:39 AM.</small>
+                        </p>
+                        <p class="text-center "><button type="button" class="btn btn-info upprecase">BACK THIS PROJECT</button></p>
+                    </div>
+                </div>
+                <h3 class="text-center">PLEDGES</h3>
+                <div class="row white-box pledged-box transaction">
+                   <a href="#" class="">
+                       <div class="col-sm-12">
+                           <p class="semi-bold colored">Pledge $5 or more</p>
+                           <p class="semi-bold"><i class="fa fa-sun-o colored"></i> 10 backers</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec massa ut justo accumsan malesuada ut pharetra sapien. Nullam ac nisi vel augue ultrices venenatis sed sed felis.</p>
+                           <p>Estimated delivery: May 2015</p>
+                       </div>
+                   </a>
+                </div>
+                <div class="row white-box pledged-box transaction">
+                   <a href="#" class="">
+                       <div class="col-sm-12">
+                           <p class="semi-bold colored">Pledge $10 or more</p>
+                           <p class="semi-bold"><i class="fa fa-sun-o colored"></i> 20 backers</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec massa ut justo accumsan malesuada ut pharetra sapien. Nullam ac nisi vel augue ultrices venenatis sed sed felis.</p>
+                           <p>Estimated delivery: May 2015</p>
+                       </div>
+                   </a>
+                </div>
+                <div class="row white-box pledged-box transaction">
+                   <a href="#" class="">
+                       <div class="col-sm-12">
+                           <p class="semi-bold colored">Pledge $20 or more</p>
+                           <p class="semi-bold"><i class="fa fa-sun-o colored"></i> 30 backers</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec massa ut justo accumsan malesuada ut pharetra sapien. Nullam ac nisi vel augue ultrices venenatis sed sed felis.</p>
+                           <p>Estimated delivery: May 2015</p>
+                       </div>
+                   </a>
+                </div>
+                <div class="row white-box pledged-box transaction">
+                   <a href="#" class="">
+                       <div class="col-sm-12">
+                           <p class="semi-bold colored">Pledge $30 or more</p>
+                           <p class="semi-bold"><i class="fa fa-sun-o colored"></i> 40 backers</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec massa ut justo accumsan malesuada ut pharetra sapien. Nullam ac nisi vel augue ultrices venenatis sed sed felis.</p>
+                           <p>Estimated delivery: May 2015</p>
+                       </div>
+                   </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--project block end -->
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12">
+                <p class="semi-bold upprecase margin-title">about</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate egestas sem, eu cursus ligula ullamcorper non. Curabitur tristique velit eu mauris venenapus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate egestas sem, eu cursus ligula ullamcorper non. Curabitur tristique velit eu mauris venenapus</p>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <p class="semi-bold upprecase margin-title">RECENT TWEETS</p>
+                <p><i class="fa fa-twitter colored"></i> Love <a href="#" class="colored">#Fundito</a>? Why don't you try <a href="#" class="colored">#More_themes</a>a> at themeforest.com. Great solution for all your content</p>
+                <p><i class="fa fa-twitter colored"></i> Love <a href="#" class="colored">#Fundito</a>? Why don't you try <a href="#" class="colored">#More_themes</a>a> at themeforest.com. Great solution for all your content</p>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <p class="semi-bold upprecase margin-title">NEWSLETTER SIGNUP</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vul</p>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="subscribe" placeholder="Enter your email" required="">
+                </div>
+                <p class="text-left"><input class="btn btn-main" type="submit" value="SEND MESAGE"></p>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <p class="semi-bold upprecase margin-title">FLICKR FEED</p>
+                <div class="">
+                    <a href="#" class="col-xs-4 flickr flickr-1"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-2"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-3"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-4"></a>
+                </div>
+                <div class="">
+                    <a href="#" class="col-xs-4 flickr flickr-5"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-6"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-7"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-8"></a>
+                </div>
+                <div class="">
+                    <a href="#" class="col-xs-4 flickr flickr-9"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-10"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-11"></a>
+                    <a href="#" class="col-xs-4 flickr flickr-12"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 text-left rights">&copy 2015 "FUNDITO" Rights Reserved. Created by LUSTERKA.</div>
+            <div class="col-xs-offset-2 col-xs-4 text-right">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                <a href="#"><i class="fa fa-google-plus-square"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script src="js/lightbox.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+
+<script>
+    $( document ).ready(function() {
+//        scroll to top
+        $('.scrolltotop').click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        });
+
+        $(".project-image").hover(
+                function() {
+                    $(this).css("opacity", "0.9");
+                }, function() {
+                    $(this).css("opacity", "1");
+                }
+        );
+        $('#myTab a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        });
+
+    });
+</script>
+
+</body>
+</html>
